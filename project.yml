@@ -12,9 +12,11 @@ options:
   deploymentTarget:
     iOS: '17.6'
     macOS: '14.6'
+    watchOS: '9.0'
   groupOrdering:
   - order:
     - ElementX
+    - ElementXWatch
     - UnitTests
     - UITests
     - IntegrationTests
@@ -47,6 +49,7 @@ settings:
 include:
 - path: app.yml
 - path: ElementX/SupportingFiles/target.yml
+- path: ElementXWatch/SupportingFiles/target.yml
 - path: UnitTests/SupportingFiles/target.yml
 - path: PreviewTests/SupportingFiles/target.yml
 - path: UITests/SupportingFiles/target.yml
